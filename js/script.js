@@ -1,6 +1,5 @@
 function menu(){
-    $('.header-btn').click(function (e) {
-        //e.preventDefault();
+    $('.header-btn').click(function (e) {        
         $(this).siblings().toggleClass('active');
     })
 }
@@ -10,8 +9,7 @@ $(document).ready(function () {
         e.preventDefault();
         $(this).html('Закрыть').toggleClass('close');
         if($(this).hasClass('close')){
-            $(this).click(function (e) {
-                //e.preventDefault();
+            $(this).click(function (e) {                
                 $(this).html('Показать данные таблицы tasks').siblings().toggleClass('hide');
             })
         }
